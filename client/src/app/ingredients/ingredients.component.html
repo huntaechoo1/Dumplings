@@ -1,0 +1,82 @@
+<body style="background-image: url('assets/Background.png'); background-size: 100% 100%;padding:2%">
+	<h1 class="display-4 text-center" style="font-family: 'Fredoka One', cursive; color: #ffd678; margin: 25px; position: relative; font-weight: bold;">加满我的饺子</h1>
+  	<!-- <img src="assets/Background.png" alt="its not working"> -->
+	<div class="game-container text-center" style="background-color: #afafaf; height: 740px; width: 1000px; margin: auto; border-radius: 5px; background-image: url('assets/dragon.png'); background-position: center; background-size: 25%; margin-top: 50px; position: relative">
+
+		<form (submit)="addIngredients(newDumpling._id)">
+			<input type="hidden" name="newDumpling.ingredients" value="{{ ingredientList | json }}">
+			<input type="submit" value="面团" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57); margin-top: 4.5%; margin-left: 29%; position: absolute;">
+		</form>
+
+
+		<div class="bowl" style="height: 440px;">
+	         <img src="assets/bowl.png" alt="This doesn't work" style="width: 450px; margin-top: 50px;">
+	         <img *ngIf = "Bamboo" src="assets/bamboo.png" alt="This doesn't work" style="width: 300px; position: absolute; top: 65px; left: 215px; transform: rotate(-5deg);">
+	         <img *ngIf = "Python" src="assets/python.png" alt="This doesn't work" style="width: 300px; position: absolute; top: 115px; left: 340px; transform: rotate(-7deg);">
+	         <img *ngIf = "Daikon" src="assets/daikon.png" alt="This doesn't work" style="width: 250px; position: absolute; top: 85px; left: 470px; transform: rotate(-5deg);">
+	         <img *ngIf = "Shark" src="assets/shark.png" alt="This doesn't work" style="width: 400px; position: absolute; top: -49px; left: 341px; transform: rotate(200deg);">
+	         <img *ngIf = "Pork" src="assets/pork.png" alt="This doesn't work" style="width: 200px; position: absolute; top: 201px; left: 390px;">
+	         <img *ngIf = "Dog" src="assets/dog.png" alt="This doesn't work" style="width: 250px; position: absolute; top: 151px; left: 390px; transform: rotate(10deg);">
+	         <img *ngIf = "Shoe" src="assets/shoe.png" alt="This doesn't work" style="width: 300px; position: absolute; top: 130px; left: 380px;">
+	         <img *ngIf = "Chicken" src="assets/chicken.png" alt="This doesn't work" style="width: 250px; position: absolute; top: 175px; left: 311.5px;">
+	         <img *ngIf = "Chocolate" src="assets/chocolate.png" alt="This doesn't work" style="width: 200px; position: absolute; top: 131px; left: 330px; transform: rotate(-15deg);">
+	         <img *ngIf = "Tarantula" src="assets/tarantula.png" alt="This doesn't work" style="width: 200px; position: absolute; top: 130px; left: 330px; transform: rotate(-15deg);">
+	         <img *ngIf = "Cheese" src="assets/cheese.png" alt="This doesn't work" style="width: 150px; position: absolute; top: 166px; left: 490px; transform: rotate(25deg);">
+	         <img *ngIf = "Dirt" src="assets/dirt.png" alt="This doesn't work" style="width: 200px; position: absolute; top: 238px; left: 404px;">
+	         <img *ngIf = "Celery" src="assets/celery.png" alt="This doesn't work" style="width: 300px; position: absolute; top: 149px; left: 293px;">
+	         <img *ngIf = "Cassava" src="assets/cassava.png" alt="This doesn't work" style="width: 150px; position: absolute; top: 279px; left: 333px; transform: rotate(53.5deg);">
+	         <img *ngIf = "Onion" src="assets/onion.png" alt="This doesn't work" style="width: 200px; position: absolute; top: 249px; left: 401px;">
+	      </div>
+	
+	 <div class="buttons-containter text-center" style="width: 91%; margin: auto; background-color: #9b0102; box-shadow: 1px 3px 3px #181818; border: 5px solid #c20b0b;">
+         <div class="row" style="width: 97%; margin: auto; margin-top: 15px;">
+            <button (click)="clickBamboo()" [disabled]="Bamboo" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; border-radius: 15px;">竹棒</button>
+            <button (click)="clickPython()" [disabled]="Python" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">蟒蛇</button>
+            <button (click)="clickDaikon()" [disabled]="Daikon" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">代孔</button>
+            <button (click)="clickShark()" [disabled]="Shark" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">鲨鱼</button>
+            <button (click)="clickPork()" [disabled]="Pork" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">猪肉</button>
+         </div>
+         <div class="row" style="width: 97%; margin: auto; margin-top: 15px;">
+            <button (click)="clickDog()" [disabled]="Dog" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; border-radius: 15px;">狗</button>
+            <button (click)="clickShoe()" [disabled]="Shoe" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">运动鞋</button>
+            <button (click)="clickChicken()" [disabled]="Chicken" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">鸡翅</button>
+            <button (click)="clickChocolate()" [disabled]="Chocolate" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">木薯</button>
+            <button (click)="clickTarantula()" [disabled]="Tarantula" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">巧克力</button>
+         </div>
+         <div class="row" style="width: 97%; margin: auto; margin-top: 15px; margin-bottom: 15px;">
+            <button (click)="clickCheese()" [disabled]="Cheese" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; border-radius: 15px;">斑马狼蛛</button>
+            <button (click)="clickDirt()" [disabled]="Dirt" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">污垢</button>
+            <button (click)="clickCelery()" [disabled]="Celery" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">块奶酪</button>
+            <button (click)="clickCassava()" [disabled]="Cassava" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">芹菜</button>
+            <button (click)="clickOnion()" [disabled]="Onion" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">洋葱</button>
+         </div>
+      </div>
+      </div>
+  </body>
+<!-- 
+{{ ingredientList | json }}
+{{ newDumpling._id | json }}
+ -->
+<!-- <button (click)="clickPork()" [disabled]="Pork">Pork</button> -->
+<!-- <button (click)="clickChicken()" [disabled]="Chicken">Chicken</button> -->
+<!-- <button (click)="clickDog()" [disabled]="Dog">Dog</button> -->
+<!-- <button (click)="clickPython()" [disabled]="Python">Python</button> -->
+<!-- <button (click)="clickShark()" [disabled]="Shark">Shark</button> -->
+<!-- <button (click)="clickTarantula()" [disabled]="Tarantula">Tarantula</button> -->
+<!-- <button (click)="clickOnion()" [disabled]="Onion">Onion</button> -->
+<!-- <button (click)="clickCelery()" [disabled]="Celery">Celery</button> -->
+<!-- <button (click)="clickDaikon()" [disabled]="Daikon">Daikon</button> -->
+<!-- <button (click)="clickCassava()" [disabled]="Cassava">Cassava</button> -->
+<!-- <button (click)="clickBamboo()" [disabled]="Bamboo">Bamboo</button> -->
+<!-- <button (click)="clickChocolate()" [disabled]="Chocolate">Chocolate</button> -->
+<!-- <button (click)="clickDirt()" [disabled]="Dirt">Dirt</button> -->
+<!-- <button (click)="clickShoe()" [disabled]="Shoe">Shoe</button> -->
+<!-- <button (click)="clickCheese()" [disabled]="Cheese">Cheese</button> -->
+
+
+
+
+
+<div>
+	<router-outlet></router-outlet>
+</div>

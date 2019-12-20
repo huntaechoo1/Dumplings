@@ -1,0 +1,31 @@
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+   <style>
+      *{
+         /* outline: 1px dotted #000; */
+         margin: 0px;
+         padding: 0px;
+      }
+   </style>
+</head>
+
+<body style="background-image: url('assets/Background.png'); background-size: 100% 100%;padding:2%">
+   <h1 class="display-4 text-center" style="font-family: 'Fredoka One', cursive; color: #ffd678; margin: 25px; position: relative; font-weight: bold;">加满我的饺子</h1>
+
+   <div class="game-container text-center" style="background-color: #afafaf; height: 740px; width: 1000px; margin: auto; border-radius: 5px; background-image: url('assets/dragon.png'); background-position: center; background-size: 25%; margin-top: 50px; position: relative;">
+
+      <!-- <div class="scroll" style="background-image: url('scroll.png'); background-repeat: no-repeat; position: relative; width: 150px; height: 350px; background-size: 100%; transform: rotate(90deg);">
+         <p>填</p>
+      </div> -->
+
+      <div class="scroll">
+            <img src="assets/scroll.png" alt="This doesn't work" style="width: 197px; height: 700px; margin-top: -104px; position: absolute; left: 401px; transform: rotate(90deg);">
+            <p style="background-color: #fff; position: absolute; margin-top: 221px; left: 210px; font-size: 2rem;">您的饺子给您的祖先和整个中国带来耻辱</p>
+      </div>
+
+      <button [routerLink]="['/main']" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57); margin-top: 46%; margin-left: -8.2%; position: absolute;">重新啟動</button>
+
+   </div>
+</body>
+   

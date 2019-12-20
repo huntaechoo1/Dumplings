@@ -1,0 +1,110 @@
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+
+   </head>
+   
+   <body style="background-image: url('assets/Background.png'); background-size: 100% 100%;padding:2%">
+      <h1 class="display-4 text-center" style="font-family: 'Fredoka One', cursive; color: #ffd678; margin: 25px; position: relative; font-weight: bold;">加满我的饺子</h1>
+   
+      <div class="game-container text-center" style="background-color: #afafaf; height: 740px; width: 1000px; margin: auto; border-radius: 5px; background-image: url('assets/dragon.png'); background-position: center; background-size: 25%; margin-top: 50px; position: relative;">
+
+
+
+
+      	<div class="meat-bowl">
+            <img src="assets/bowl.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat1" (click)="clickBowlMeat1()" src="assets/meat1.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat2" (click)="clickBowlMeat2()" src="assets/meat2.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat3" (click)="clickBowlMeat3()" src="assets/meat3.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat4" (click)="clickBowlMeat4()" src="assets/meat4.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat5" (click)="clickBowlMeat5()" src="assets/meat5.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat6" (click)="clickBowlMeat6()" src="assets/meat6.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat7" (click)="clickBowlMeat7()" src="assets/meat7.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat8" (click)="clickBowlMeat8()" src="assets/meat8.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat9" (click)="clickBowlMeat9()" src="assets/meat9.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat10" (click)="clickBowlMeat10()" src="assets/meat10.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat11" (click)="clickBowlMeat11()" src="assets/meat11.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat12" (click)="clickBowlMeat12()" src="assets/meat12.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+            <img *ngIf="BowlMeat13" (click)="clickBowlMeat13()" src="assets/meat13.png" alt="This doesn't work" style="width: 300px; position: absolute; margin-top: 50px; left: 650px;">
+         </div>
+   
+         <div class="board" style="height: 610px;">
+            <img src="assets/board.png" alt="This doesn't work" style="width: 934px; height: 335px; margin-top: 300px; position: absolute; left: 33px;">
+            <div class="row">
+               <img *ngIf="Dough13" (click)="clickDough13()" src="assets/dough1.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 142px;">
+               <img *ngIf="Dough12" (click)="clickDough12()" src="assets/dough2.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 249px;">
+               <img *ngIf="Dough11" (click)="clickDough11()" src="assets/dough3.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 356px;">
+               <img *ngIf="Dough10" (click)="clickDough10()" src="assets/dough4.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 461px;">
+               <img *ngIf="Dough9" (click)="clickDough9()" src="assets/dough5.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 570px;">
+               <img *ngIf="Dough8" (click)="clickDough8()" src="assets/dough6.png" alt="This doesn't work" style="width: 130px; margin-top: 325px; position: absolute; left: 677px;">
+
+               <img *ngIf="ScoopMeat13" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 177px;">
+               <img *ngIf="ScoopMeat12" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 283px;">
+               <img *ngIf="ScoopMeat11" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 389px;">
+               <img *ngIf="ScoopMeat10" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 496px;">
+               <img *ngIf="ScoopMeat9" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 603px;">
+               <img *ngIf="ScoopMeat8" src="assets/meatball.png" alt="This doesn't work" style="width: 60px; margin-top: 335px; position: absolute; left: 709px;">
+
+               <img *ngIf="Dumpling13" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 162px;">
+               <img *ngIf="Dumpling12" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 268px;">
+               <img *ngIf="Dumpling11" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 376px;">
+               <img *ngIf="Dumpling10" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 484px;">
+               <img *ngIf="Dumpling9" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 592px;">
+               <img *ngIf="Dumpling8" src="assets/og1.png" alt="This doesn't work" style="width: 90px; margin-top: 327px; position: absolute; left: 700px;">
+
+            </div>
+            <div class="row">
+               <img *ngIf="Dough7" (click)="clickDough7()" src="assets/dough7.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 95px;">
+               <img *ngIf="Dough6" (click)="clickDough6()" src="assets/dough8.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 205px;">
+               <img *ngIf="Dough5" (click)="clickDough5()" src="assets/dough9.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 315px;">
+               <img *ngIf="Dough4" (click)="clickDough4()" src="assets/dough10.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 425px;">
+               <img *ngIf="Dough3" (click)="clickDough3()" src="assets/dough11.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 535px;">
+               <img *ngIf="Dough2" (click)="clickDough2()" src="assets/dough12.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 645px;">
+               <img *ngIf="Dough1" (click)="clickDough1()" src="assets/dough13.png" alt="This doesn't work" style="width: 135px; margin-top: 409px; position: absolute; left: 755px;">
+
+               <img *ngIf="ScoopMeat7" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 131px;">
+               <img *ngIf="ScoopMeat6" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 241px;">
+               <img *ngIf="ScoopMeat5" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 351px;">
+               <img *ngIf="ScoopMeat4" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 461px;">
+               <img *ngIf="ScoopMeat3" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 571px;">
+               <img *ngIf="ScoopMeat2" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 681px;">
+               <img *ngIf="ScoopMeat1" src="assets/meatball.png" alt="This doesn't work" style="width: 65px; margin-top: 419px; position: absolute; left: 791px;">
+
+               <img *ngIf="Dumpling7" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 113px;">
+               <img *ngIf="Dumpling6" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 223px;">
+               <img *ngIf="Dumpling5" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 333px;">
+               <img *ngIf="Dumpling4" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 443px;">
+               <img *ngIf="Dumpling3" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 553px;">
+               <img *ngIf="Dumpling2" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 663px;">
+               <img *ngIf="Dumpling1" src="assets/og1.png" alt="This doesn't work" style="width: 95px; margin-top: 413px; position: absolute; left: 773px;">
+
+            </div>
+
+
+
+            <!-- <img src="meatball.png" alt="This doesn't work" style="width: 95px; margin-top: 300px; position: absolute; top: 35px; left: 444px;">
+            <img src="meatball.png" alt="This doesn't work" style="width: 95px; margin-top: 300px; position: absolute; top: 35px; left: 444px;"> -->
+         </div>
+          <button *ngIf="Dumpling1 && Dumpling2 && Dumpling3 && Dumpling4 && Dumpling5 && Dumpling6 && Dumpling7 && Dumpling8 && Dumpling9 && Dumpling10 && Dumpling11 && Dumpling12 && Dumpling13" [routerLink]="['/cook', oneDumpling._id]" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57); margin-left: -8.2%; margin-top: -40.5%; position: absolute;">做饭</button>
+        <!--  <div class="buttons-containter text-center" style="width: 91%; margin: auto; background-color: #9b0102; box-shadow: 1px 3px 3px #181818; border: 5px solid #c20b0b;">
+            <div class="row" style="width: 97%; margin: auto; margin-top: 15px; margin-bottom: 15px;">
+               <button class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; border-radius: 15px;">斑马狼蛛</button>
+               <button class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">污垢</button>
+               <button class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">块奶酪</button>
+               <button class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">芹菜</button>
+               <button class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid #0a3ca7; font-size: 2rem; margin-left: 11.5px; border-radius: 15px;">洋葱</button>
+            </div> -->
+         <!-- </div> -->
+      </div>
+   </body>
+
+
+
+
+
+
+
+<div>
+	<router-outlet></router-outlet>
+</div>

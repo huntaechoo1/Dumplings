@@ -1,0 +1,30 @@
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+      <style>
+         *{
+            /* outline: 1px dotted #000; */
+            margin: 0px;
+            padding: 0px;
+         }
+      </style>
+   </head>
+   
+   <body style="background-image: url('assets/Background.png'); background-size: 100% 100%;padding:2%">
+      <h1 class="display-4 text-center" style="font-family: 'Fredoka One', cursive; color: #ffd678; margin: 25px; position: relative; font-weight: bold;">加满我的饺子</h1>
+   
+      <div class="game-container text-center" style="background-color: #afafaf; height: 740px; width: 1000px; margin: auto; border-radius: 5px; background-image: url('assets/dragon.png'); background-position: center; background-size: 25%; margin-top: 50px; position: relative;">
+   
+         <!-- <div class="scroll" style="background-image: url('scroll.png'); background-repeat: no-repeat; position: relative; width: 150px; height: 350px; background-size: 100%;">
+            <p>填</p>
+         </div> -->
+
+         <div class="stove">
+            <img (click)="addCook()" src="assets/gas.png" alt="This doesn't work" style="width: 500px; margin-top: 250px; position: absolute; left: 248px;">
+            <img  src="assets/pan.png" alt="This doesn't work" style="width: 500px; margin-top: 130px; position: absolute; left: 308px;">
+         </div>
+         <button *ngIf="cookCounter > 25"  [routerLink]="['/taste', oneDumpling._id]" class="btn btn-primary" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57); margin-top: 5%; margin-left: 29%; position: absolute;">做饭</button>
+      </div>
+
+   </body>
+   

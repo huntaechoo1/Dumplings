@@ -1,0 +1,21 @@
+<!-- Fill My Dumpling // Jillian Hughes and Huntae Choo 12/20/2019 -->
+
+<body style="background-image: url('assets/Background.png'); background-size: 100% 100%; padding:2%">
+	<h1 class="display-4 text-center" style="font-family: 'Fredoka One', cursive; color: #ffd678; margin: 20px; position: relative; font-weight: bold;">加满我的饺子</h1>
+  	<!-- <img src="assets/Background.png" alt="its not working"> -->
+<div class="game-container text-center" style="background-color: #afafaf; height: 740px; width: 1000px; margin: auto; border-radius: 5px; background-image: url('assets/dragon.png'); background-position: center; background-size: 25%; margin-top: 50px; position: relative; padding-top:13%">
+
+	<div>
+		<button [routerLink]="['/ingredients']" class="btn btn-danger" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57)">开始</button>
+
+		<button [routerLink]="['/honor']" class="btn btn-danger" style="width: 165px; box-shadow: 1px 3px 3px #181818; border: 5px solid rgb(237,200,57); font-size: 2rem; border-radius: 15px; color: rgb(237,200,57)">名人堂</button>
+	</div>
+
+
+</div>
+
+<div>
+	<router-outlet></router-outlet>
+</div>
+
+</body>

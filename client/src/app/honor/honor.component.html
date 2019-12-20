@@ -1,0 +1,22 @@
+<p>You have no honor</p>
+
+<table class="table">
+	<thead>
+		<tr>
+			<th scope="col">Name</th>
+			<th scope="col">Score</th>
+			<th scope="col">Ingredients</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let dumpling of allDumplings">
+			<th scope="col">{{dumpling.name}}</th>
+			<td>{{dumpling.score}}</td>
+			<td *ngFor="let ingredient of dumpling.ingredients">{{ingredient}}</td>
+		</tr>
+	</tbody>
+</table>
+
+<div>
+	<router-outlet></router-outlet>
+</div>
